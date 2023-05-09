@@ -1,3 +1,7 @@
+import Person from ".";
+
 it("should sum", () => {
-  expect(3 + 3).toBe(6);
+  const person = new Person();
+
+  expect(person.satMyName()).toBe("Samuel");
 });

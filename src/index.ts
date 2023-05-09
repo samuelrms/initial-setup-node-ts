@@ -1,1 +1,7 @@
-console.log("🔥 Initial Log 🔥");
+class Person {
+  satMyName() {
+    return "Samuel";
+  }
+}
+
+export default Person;
