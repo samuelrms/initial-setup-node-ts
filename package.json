@@ -1,0 +1,11 @@
+{
+  "name": "ts-node-project-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Samuel Ramos <samuelaoliveiraramos@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.1.1",
+    "typescript": "^5.0.4"
+  }
+}
