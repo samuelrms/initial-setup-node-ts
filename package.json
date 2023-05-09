@@ -5,9 +5,9 @@
   "author": "Samuel Ramos <samuelaoliveiraramos@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "start": "node dist/index.js",
-    "start:dev": "nodemon --watch 'src' --exec 'ts-node src/index.ts' -e ts",
+    "start:dev": "nodemon --watch 'src' --exec 'ts-node -r tsconfig-paths/register src/index.ts' -e ts",
     "husky:prepare": "husky install",
     "test": "jest --passWithNoTests",
     "test:watch": "yarn test --watch",
@@ -28,6 +28,8 @@
     "prettier": "^2.8.8",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.6",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.4"
   }
 }
